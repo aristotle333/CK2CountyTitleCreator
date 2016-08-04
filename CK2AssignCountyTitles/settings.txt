@@ -3,4 +3,4 @@ titlesPath = "C:\Users\Aristotle\Desktop\TitlesConverter\titles"		-- Path of the
 provincesRequiringTitles = "1-7"										-- Provinces requiring title holders. Can be specified as range like 1-10 or as space separated i.e. 12 13 15
 titleHolderDate = "760.1.1"												-- The date at which the character becomes holder	
 holderIDToProvinceIDMultiplier = "100"									-- The character ID assigned to a province based on the province ID. i.e. if the province has an ID = 20 then the character ID of its holder will be provinceID * holderIDToProvinceIDMultiplier
-numBracketsToSkip = "2"													-- How many bracket statements will be skipped in the titles files after which the title will be assigned to a holder yolo yolo
+numBracketsToSkip = "2"													-- How many bracket statements will be skipped in the titles files after which the title will be assigned to a holder yolo yolo yoloTest
