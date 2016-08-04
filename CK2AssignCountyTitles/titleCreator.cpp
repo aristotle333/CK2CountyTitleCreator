@@ -40,15 +40,16 @@ void CreateTitle(const settingVals& setVal, const dirent* ent, int provID) {
     int bracketsLeftToSkip = setVal.numBracketsToSkip;
 
     // Copy original Title file
-    while (getline(in, line)) {
-        if (line == "}") {
-            --bracketsLeftToSkip;
-            if (bracketsLeftToSkip == 0) {
-                out << line << "\n";
-                break;
+    if (bracketsLeftToSkip > 0) {
+        while (getline(in, line)) {
+            if (line == "}") {
+                if (--bracketsLeftToSkip == 0) {
+                    out << line << "\n";
+                    break;
+                }
             }
+            out << line << "\n";
         }
-        out << line << "\n";
     }
 
     // Write the line of title

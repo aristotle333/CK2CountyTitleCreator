@@ -10,7 +10,7 @@ independent counts.
 
 ## Instructions
 
-1. To download this tool click here:
+1. To download this tool click [here](CountyTitleCreator.zip) 
 2. Unzip the file to any desired location
 3. Open the file settings.txt
     *  **Make sure that every attribute** (*everything to the right of the equals sign*) **specified is enclosed with double quotes,** e.g. `titlesPath = "titlePathValue"`

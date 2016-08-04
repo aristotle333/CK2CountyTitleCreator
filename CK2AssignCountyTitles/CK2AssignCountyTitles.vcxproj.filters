@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\MarkdownFiles">
+      <UniqueIdentifier>{41490485-9762-4956-8621-bf8d403b1274}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,7 +65,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\MarkdownFiles</Filter>
+    </None>
+    <None Include="..\LICENSE.md">
+      <Filter>Source Files\MarkdownFiles</Filter>
     </None>
   </ItemGroup>
 </Project>
