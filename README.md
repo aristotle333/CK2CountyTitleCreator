@@ -53,3 +53,8 @@ independent counts.
 				holder=100
 			}
 			```
+
+****
+[MIT License](LICENSE.md)
+****
+Created by [Aristotelis Sigiouan Leventidis](https://github.com/aristotle333)
