@@ -40,7 +40,7 @@ independent counts.
 			liege=d_dayria
 		}
 		```
-		   We can set `numBracketsToSkip = "2"` so that it skips the first 2 statements with brackets so that the end result is something like this:
+		We can set `numBracketsToSkip = "2"` so that it skips the first 2 statements with brackets so that the end result is something like this:
 		```
 		600.1.1={
 			law = agnatic_succession
