@@ -31,28 +31,28 @@ independent counts.
     * **numBracketsToSkip** specifies how many statements within brackets will be skipped in order to record the county holder ownership. This is ideal if you want to have display some history
 		on a given title before assigning it.
         * For example if the title file `c_eston.txt` has the following:
-			```
-			600.1.1={
-				law = agnatic_succession
-				law = succ_gavelkind
-			}
-			605.1.1={
-				liege=d_dayria
-			}
-			```
-		   We can set `numBracketsToSkip = "2"` so that it skips the first 2 statements with brackets so that the end result is something like this:
-			```
-			600.1.1={
-				law = agnatic_succession
-				law = succ_gavelkind
-			}
-			605.1.1={
-				liege=d_dayria
-			}			
-			610.1.1={
-				holder=100
-			}
-			```
+		```
+		600.1.1={
+			law = agnatic_succession
+			law = succ_gavelkind
+		}
+		605.1.1={
+			liege=d_dayria
+		}
+		```
+		We can set `numBracketsToSkip = "2"` so that it skips the first 2 statements with brackets so that the end result is something like this:
+		```
+		600.1.1={
+			law = agnatic_succession
+			law = succ_gavelkind
+		}
+		605.1.1={
+			liege=d_dayria
+		}			
+		610.1.1={
+			holder=100
+		}
+		```
 
 ****
 [MIT License](LICENSE.md)
