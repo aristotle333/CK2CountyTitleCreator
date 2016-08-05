@@ -2,15 +2,17 @@
 
 This is a small tool that is helpful for large total conversion mods of CK2.
  
-Its purpose is to quickly assign characters county titles based on an input of provinces.
+Its purpose is to quickly assign county titles to characters based on an input of provinces.
 This works great if you want to have a shattered map that is primarily ruled by
 independent counts.
+
+[Paradox Forum Thread](https://forum.paradoxplaza.com/forum/index.php?threads/ck2-simple-county-title-creator.961353/)
 
 ****
 
 ## Instructions
 
-1. To download this tool click [here](CountyTitleCreator.zip) 
+1. To download this tool click [here](CountyTitleCreator.zip) or visit the Paradox Forum Thread [here](https://forum.paradoxplaza.com/forum/index.php?threads/ck2-simple-county-title-creator.961353/)
 2. Unzip the file to any desired location
 3. Open the file settings.txt
     *  **Make sure that every attribute** (*everything to the right of the equals sign*) **specified is enclosed with double quotes,** e.g. `titlesPath = "titlePathValue"`
