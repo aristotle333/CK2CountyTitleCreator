@@ -68,7 +68,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>TitleCreator</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -107,6 +109,7 @@
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>/OUT:TitleCreator</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -119,21 +122,20 @@
     <ClInclude Include="provinceNameToID.h" />
     <ClInclude Include="readSettings.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="resource1.h" />
     <ClInclude Include="titleCreator.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="settings.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\LICENSE.md" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
     <ResourceCompile Include="CK2AssignCountyTitles.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="TittleCreator.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\LICENSE.md" />
-    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
