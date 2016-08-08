@@ -16,6 +16,7 @@ struct settingVals {
     string provincesRequiringTitles;
     string titleHolderDate;
     int holderIDToProvinceIDMultiplier;
+    int holderIDToProvinceIDAdditiveConstant;
     int numBracketsToSkip;
 };
 

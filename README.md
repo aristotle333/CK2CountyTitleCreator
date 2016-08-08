@@ -27,9 +27,9 @@ independent counts.
 		* For example `10-20 24 30-33` will generate titles for the provinces 10 to 20 inclusive, province 24 and provinces 30 to 33 inclusive. Make sure every statement is space separated.
     * **titleHolderDate** specifies the date at which the assigned character holds the given county title.
 		* It must be of the form *year.month.day*, e.g. `titleHolderDate = "1066.10.29"`
-    * **holderIDToProvinceIDMultiplier** specifies what will be the character's holder ID based on the province ID.
-		* It is calculated as `characterHolderIDForProvinceX = provinceX_ID * holderIDToProvinceIDMultiplier`
-		* For example if `holderIDToProvinceIDMultiplier = "100"` this means that the character's holder ID for province 7 will be 700. Since `7 * 100 = 700`
+    * **holderIDToProvinceIDMultiplier** and **holderIDToProvinceIDAdditiveConstant** are attributes that specify what will be the character's holder ID based on the province ID. The formula is listed below:
+      * The character holder's ID is calculated as `characterHolderIDForProvinceX = provinceX_ID * holderIDToProvinceIDMultiplier + holderIDToProvinceIDAdditiveConstant`
+		* For example if `holderIDToProvinceIDMultiplier = "100"` and `holderIDToProvinceIDAdditiveConstant = "4"` this means that the character's holder ID for province 7 will be 704. Since `7 * 100 + 4 = 704`
     * **numBracketsToSkip** specifies how many statements within brackets will be skipped in order to record the county holder ownership. This is ideal if you want to have display some history
 		on a given title before assigning it.
         * For example if the title file `c_eston.txt` has the following:

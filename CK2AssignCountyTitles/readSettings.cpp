@@ -10,6 +10,7 @@ settingVals readSettings() {
     setVals.provincesRequiringTitles = readProperty(ifs, "provincesRequiringTitles");
     setVals.titleHolderDate = readProperty(ifs, "titleHolderDate");
     setVals.holderIDToProvinceIDMultiplier = stoi(readProperty(ifs, "holderIDToProvinceIDMultiplier"));
+    setVals.holderIDToProvinceIDAdditiveConstant = stoi(readProperty(ifs, "holderIDToProvinceIDAdditiveConstant"));
     setVals.numBracketsToSkip = stoi(readProperty(ifs, "numBracketsToSkip"));
     ifs.close();
 

@@ -53,7 +53,8 @@ void CreateTitle(const settingVals& setVal, const dirent* ent, int provID) {
     }
 
     // Write the line of title
-    out << setVal.titleHolderDate << "={\n" << "\tholder=" << provID * 100 << "\n}";
+    out << setVal.titleHolderDate << "={\n" << "\tholder=" 
+        << provID * setVal.holderIDToProvinceIDMultiplier + setVal.holderIDToProvinceIDAdditiveConstant << "\n}";
     in.close();
     out.close();
 

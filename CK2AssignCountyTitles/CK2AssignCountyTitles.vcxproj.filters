@@ -44,14 +44,19 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="settings.txt">
       <Filter>Source Files</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>Source Files\MarkdownFiles</Filter>
+    </None>
+    <None Include="..\LICENSE.md">
+      <Filter>Source Files\MarkdownFiles</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="CK2AssignCountyTitles.rc">
@@ -62,13 +67,5 @@
     <Image Include="TittleCreator.ico">
       <Filter>Resource Files</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\README.md">
-      <Filter>Source Files\MarkdownFiles</Filter>
-    </None>
-    <None Include="..\LICENSE.md">
-      <Filter>Source Files\MarkdownFiles</Filter>
-    </None>
   </ItemGroup>
 </Project>
