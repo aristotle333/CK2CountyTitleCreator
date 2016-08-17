@@ -20,7 +20,7 @@ unordered_map<string, int> createProvinceNameToIDMap(string provincesPath) {
                     provinceNameToID.emplace(provinceNameFull, provinceID);
                 }
                 else {
-                    std::cerr << "Duplicate province ID detected, check province files at " + provincesPath;
+                    std::cerr << "Duplicate province ID detected for the province " << provinceNameFull << " with ID " << provinceID << "\n";
                     throw std::exception();
                 }
             }
